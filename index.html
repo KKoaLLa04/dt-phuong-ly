@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOFA Phương Ly | Nội Thất Cao Cấp</title>
+
+  <!-- SEO -->
+  <meta name="description" content="SOFA Phương Ly. Chuyên sofa da thật 100%, sofa gỗ tự nhiên, giường divan cao cấp. Sản xuất tại xưởng nội địa, giao lắp tận nơi, bảo hành dài hạn.">
+  <meta name="keywords" content="sofa da thật, sofa gỗ, giường divan, nội thất cao cấp, SOFA Phương Ly">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SOFA Phương Ly | Nội Thất Cao Cấp">
+  <meta property="og:description" content="Sofa da thật 100%, gỗ tự nhiên. Sản xuất tại xưởng nội địa. Giao lắp tận nơi, bảo hành dài hạn.">
+  <meta property="og:image" content="images/og-image.jpg"><!-- TODO: thêm ảnh og-image.jpg -->
+  <meta property="og:locale" content="vi_VN">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Three.js Import Map -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body class="is-loading">
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="l-dt">SOFA</span><span class="l-divan">Phương Ly</span>
+      </div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-sub">Nội Thất Cao Cấp</p>
+    </div>
+  </div>
+
+  <!-- ===== CURSOR ===== -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="site-logo">
+        <span class="logo-brand">Sofa <em>Phương Ly</em></span>
+      </a>
+      <nav class="main-nav">
+        <a href="#products">Sản phẩm</a>
+        <a href="#showcase">360°</a>
+        <a href="#usp">Về chúng tôi</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+      <a href="https://www.facebook.com/profile.php?id=61574062977384"
+         target="_blank" rel="noopener"
+         class="header-cta js-magnetic">Đặt hàng ngay</a>
+      <button class="hamburger" id="hamburger" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="#products" class="mob-link">Sản phẩm</a>
+      <a href="#showcase" class="mob-link">360° Showcase</a>
+      <a href="#usp" class="mob-link">Về chúng tôi</a>
+      <a href="#gallery" class="mob-link">Gallery</a>
+      <a href="#testimonials" class="mob-link">Đánh giá</a>
+      <a href="https://www.facebook.com/profile.php?id=61574062977384"
+         target="_blank" rel="noopener" class="mob-cta">
+        💬 Nhắn tin đặt hàng
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-gradient"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Thương hiệu nội thất cao cấp</p>
+        <h1 class="hero-title">
+          Sofa kiến tạo<br>
+          <em>không gian sống</em><br>
+          đẳng cấp
+        </h1>
+        <p class="hero-sub">Da bò thật 100% &bull; Gỗ tự nhiên &bull; Thiết kế sang trọng hiện đại</p>
+        <div class="hero-btns">
+          <a href="https://www.facebook.com/profile.php?id=61574062977384"
+             target="_blank" rel="noopener"
+             class="btn-primary js-magnetic">
+            <span>Đặt hàng ngay</span>
+            <div class="btn-glow"></div>
+          </a>
+          <a href="#products" class="btn-ghost">
+            Khám phá bộ sưu tập
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <div class="scroll-anim-line"></div>
+        <span>Cuộn xuống</span>
+      </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee-bar">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>Da thật 100%</span><span class="dot">✦</span>
+          <span>Gỗ tự nhiên</span><span class="dot">✦</span>
+          <span>Bảo hành dài hạn</span><span class="dot">✦</span>
+          <span>Giao lắp tận nơi</span><span class="dot">✦</span>
+          <span>Đặt theo yêu cầu</span><span class="dot">✦</span>
+          <span>Sản xuất nội địa</span><span class="dot">✦</span>
+          <span>Tư vấn miễn phí</span><span class="dot">✦</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>Da thật 100%</span><span class="dot">✦</span>
+          <span>Gỗ tự nhiên</span><span class="dot">✦</span>
+          <span>Bảo hành dài hạn</span><span class="dot">✦</span>
+          <span>Giao lắp tận nơi</span><span class="dot">✦</span>
+          <span>Đặt theo yêu cầu</span><span class="dot">✦</span>
+          <span>Sản xuất nội địa</span><span class="dot">✦</span>
+          <span>Tư vấn miễn phí</span><span class="dot">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section id="products">
+      <div class="container">
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">Bộ sưu tập</span>
+          <h2>Sofa &amp; Nội Thất<br><em>Đỉnh Cao Tinh Tế</em></h2>
+          <p>Mỗi sản phẩm là sự kết hợp hoàn hảo giữa chất liệu thượng hạng và nghệ thuật thiết kế đương đại</p>
+        </div>
+        <div class="product-tabs" data-reveal>
+          <button class="tab active" data-tab="sofa-da">Sofa Da</button>
+          <button class="tab" data-tab="sofa-go">Sofa Gỗ</button>
+          <button class="tab" data-tab="divan">Giường – Divan</button>
+        </div>
+        <div id="product-grid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== SHOWCASE 360° ===== -->
+    <section id="showcase">
+      <div class="container">
+        <div class="showcase-layout">
+          <div class="showcase-info" data-reveal>
+            <span class="eyebrow">Trải nghiệm 360°</span>
+            <h2>Cảm nhận từng<br><em>đường nét tinh tế</em></h2>
+            <ul class="spec-list">
+              <li>
+                <span class="spec-ico">🐂</span>
+                <div><strong>Da bò thật 100%</strong><p>Nhập khẩu cao cấp, mềm mịn, bền theo thời gian</p></div>
+              </li>
+              <li>
+                <span class="spec-ico">🌳</span>
+                <div><strong>Khung gỗ tự nhiên</strong><p>Gỗ sồi &amp; óc chó, chắc chắn, ổn định tuyệt đối</p></div>
+              </li>
+              <li>
+                <span class="spec-ico">🧵</span>
+                <div><strong>Đường may thủ công</strong><p>Từng đường chỉ tinh xảo, bền chắc, thẩm mỹ cao</p></div>
+              </li>
+              <li>
+                <span class="spec-ico">☁️</span>
+                <div><strong>Nệm cao su non</strong><p>Êm ái, đàn hồi tốt, không xẹp lún sau nhiều năm</p></div>
+              </li>
+            </ul>
+            <div class="color-picker">
+              <p>Chọn màu da:</p>
+              <div class="swatches">
+                <button class="swatch active" data-hex="#8A5A36" title="Nâu da bò" style="background:#8A5A36"></button>
+                <button class="swatch" data-hex="#1C1C1C" title="Đen tuyền" style="background:#1C1C1C"></button>
+                <button class="swatch" data-hex="#C4A882" title="Be kem" style="background:#C4A882"></button>
+                <button class="swatch" data-hex="#5C3317" title="Nâu đậm" style="background:#5C3317"></button>
+                <button class="swatch" data-hex="#2C4A3E" title="Xanh lá" style="background:#2C4A3E"></button>
+              </div>
+            </div>
+            <a href="https://www.facebook.com/profile.php?id=61574062977384"
+               target="_blank" rel="noopener"
+               class="btn-primary js-magnetic">
+              <span>Inbox tư vấn ngay</span>
+              <div class="btn-glow"></div>
+            </a>
+          </div>
+          <div class="showcase-canvas-wrap" id="showcase-wrap">
+            <div class="showcase-carousel" id="showcase-carousel">
+              <div class="showcase-track" id="showcase-track">
+                <div class="showcase-slide"><img src="images/sp-1.jpg"  alt="Sofa Da Modular be kem" loading="lazy"></div>
+                <div class="showcase-slide"><img src="images/sp-2.jpg"  alt="Sofa Da nâu cognac" loading="lazy"></div>
+                <div class="showcase-slide"><img src="images/sp-6.jpg"  alt="Sofa Da Góc L đen" loading="lazy"></div>
+                <div class="showcase-slide"><img src="images/sp-13.jpg" alt="Divan Da xanh lá" loading="lazy"></div>
+                <div class="showcase-slide"><img src="images/sp-3.jpg"  alt="Sofa Da be kem viền nâu" loading="lazy"></div>
+                <div class="showcase-slide"><img src="images/sp-15.jpg" alt="Divan Da cognac" loading="lazy"></div>
+              </div>
+              <div class="showcase-dots" id="showcase-dots"></div>
+            </div>
+            <div class="drag-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 3 4 7l4 4M16 3l4 4-4 4M4 7h16"/></svg>
+              Kéo để xem sản phẩm
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== USP ===== -->
+    <section id="usp">
+      <div class="container">
+        <div class="section-intro dark-intro" data-reveal>
+          <span class="eyebrow gold-ey">Vì sao chọn chúng tôi</span>
+          <h2>SOFA Phương Ly – Cam Kết<br><em>Chất Lượng Thật Sự</em></h2>
+        </div>
+        <div class="stats-row" data-reveal>
+          <div class="stat-card">
+            <div class="stat-num" data-count="1000">0</div><span>+</span>
+            <p>Khách hàng tin tưởng</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-count="100">0</div><span>%</span>
+            <p>Da &amp; gỗ nguyên chất</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-count="5">0</div><span>★</span>
+            <p>Đánh giá trung bình</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-count="10">0</div><span>+</span>
+            <p>Năm bảo hành khung</p>
+          </div>
+        </div>
+        <div class="usp-grid" data-reveal>
+          <div class="usp-card">
+            <div class="usp-icon">
+              <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="#C9A35B" stroke-width="1.5"/><path d="M20 32l8 8 16-16" stroke="#C9A35B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Chất Liệu Chính Hãng</h3>
+            <p>Da bò thật nhập khẩu, gỗ tự nhiên 100%, không pha tạp. Kèm chứng nhận chất liệu cho từng sản phẩm.</p>
+          </div>
+          <div class="usp-card">
+            <div class="usp-icon">
+              <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="#C9A35B" stroke-width="1.5"/><path d="M20 44V28l12-10 12 10v16" stroke="#C9A35B" stroke-width="1.5" stroke-linejoin="round"/><rect x="26" y="34" width="12" height="10" stroke="#C9A35B" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Sản Xuất Tại Xưởng</h3>
+            <p>Xưởng sản xuất nội địa, kiểm soát chất lượng từng công đoạn, không qua trung gian — giá tốt, chất lượng đảm bảo.</p>
+          </div>
+          <div class="usp-card">
+            <div class="usp-icon">
+              <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="#C9A35B" stroke-width="1.5"/><rect x="16" y="22" width="32" height="22" rx="3" stroke="#C9A35B" stroke-width="1.5"/><path d="M22 22v-4a10 10 0 0120 0v4" stroke="#C9A35B" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Thiết Kế Đa Dạng</h3>
+            <p>Hàng trăm mẫu mã từ hiện đại, tối giản đến cổ điển. Đặt theo yêu cầu về kích thước, màu sắc, chất liệu.</p>
+          </div>
+          <div class="usp-card">
+            <div class="usp-icon">
+              <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="#C9A35B" stroke-width="1.5"/><circle cx="32" cy="32" r="12" stroke="#C9A35B" stroke-width="1.5"/><path d="M32 20v12l8 4" stroke="#C9A35B" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Tư Vấn &amp; Bảo Hành</h3>
+            <p>Tư vấn nhiệt tình, hỗ trợ chọn mẫu, đo đạc tại nhà. Giao lắp tận nơi, bảo hành dài hạn toàn quốc.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section id="gallery">
+      <div class="container">
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">Không gian thực tế</span>
+          <h2>Sofa trong<br><em>Không Gian Sống</em></h2>
+        </div>
+      </div>
+      <div class="gallery-masonry">
+        <div class="gi gi-tall" data-speed="0.15">
+          <div class="gi-img"><img src="images/sp-1.jpg" alt="Sofa da modular be kem" loading="lazy"></div>
+          <div class="gi-label">Sofa Da Modular</div>
+        </div>
+        <div class="gi" data-speed="-0.1">
+          <div class="gi-img"><img src="images/sp-6.jpg" alt="Sofa da góc L đen" loading="lazy"></div>
+          <div class="gi-label">Sofa Da Góc L</div>
+        </div>
+        <div class="gi" data-speed="0.08">
+          <div class="gi-img"><img src="images/sp-4.jpg" alt="Sofa gỗ nan dọc" loading="lazy"></div>
+          <div class="gi-label">Sofa Gỗ Nan Dọc</div>
+        </div>
+        <div class="gi gi-tall" data-speed="-0.12">
+          <div class="gi-img"><img src="images/sp-13.jpg" alt="Divan da xanh lá" loading="lazy"></div>
+          <div class="gi-label">Divan Da Xanh Lá</div>
+        </div>
+        <div class="gi" data-speed="0.06">
+          <div class="gi-img"><img src="images/sp-10.jpg" alt="Sofa vải xanh rêu" loading="lazy"></div>
+          <div class="gi-label">Sofa Vải Xanh Rêu</div>
+        </div>
+        <div class="gi" data-speed="-0.09">
+          <div class="gi-img"><img src="images/sp-15.jpg" alt="Divan da cognac" loading="lazy"></div>
+          <div class="gi-label">Divan Da Cognac</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">Khách hàng nói gì</span>
+          <h2>Cảm Nhận Thật<br><em>Từ Khách Hàng Thật</em></h2>
+        </div>
+        <!-- TODO: thay nội dung mẫu bằng đánh giá thật từ khách hàng -->
+        <div class="testi-grid" data-reveal>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"Mình rất bất ngờ với chất lượng da. Sờ vào thấy ngay sự khác biệt — mềm mịn và có mùi da thật rất đặc trưng. Sofa nhà mình nhìn sang hẳn lên!"</blockquote>
+            <div class="testi-author">
+              <div class="testi-av" style="background:linear-gradient(135deg,#B07A4A,#C9A35B)">N</div>
+              <div><strong>Nguyễn Minh Anh</strong><span>Khách hàng tại Hà Nội</span></div>
+            </div>
+          </div>
+          <div class="testi-card testi-featured">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"Đặt hàng qua Fanpage, được tư vấn nhiệt tình, đo đạc tại nhà. Giao hàng đúng hẹn, lắp đặt chuyên nghiệp. Sofa gỗ óc chó giờ là điểm nhấn cả căn phòng."</blockquote>
+            <div class="testi-author">
+              <div class="testi-av" style="background:linear-gradient(135deg,#5C3317,#8A5A36)">T</div>
+              <div><strong>Trần Văn Thắng</strong><span>Khách hàng tại TP.HCM</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"Ban đầu lo ngại chất lượng vì giá cạnh tranh, nhưng nhận hàng xong thì xứng đáng từng đồng. Divan ngủ êm, da thật, khung gỗ chắc chắn. Rất recommend!"</blockquote>
+            <div class="testi-author">
+              <div class="testi-av" style="background:linear-gradient(135deg,#B07A4A,#5C3317)">L</div>
+              <div><strong>Lê Thị Hương</strong><span>Khách hàng tại Đà Nẵng</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"Mua sofa da góc L cho căn hộ, vừa vặn đẹp. Màu sắc chính xác như ảnh. Nhân viên hỗ trợ sau bán hàng rất tốt. Sẽ quay lại mua thêm divan sắp tới!"</blockquote>
+            <div class="testi-author">
+              <div class="testi-av" style="background:linear-gradient(135deg,#C9A35B,#B07A4A)">P</div>
+              <div><strong>Phạm Thanh Phong</strong><span>Khách hàng tại Bình Dương</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section id="final-cta">
+      <div class="container">
+        <div class="cta-inner" data-reveal>
+          <span class="eyebrow gold-ey">Sẵn sàng chưa?</span>
+          <h2>Sẵn sàng nâng tầm<br><em>phòng khách của bạn?</em></h2>
+          <p>Hàng ngàn gia đình Việt đã tin tưởng SOFA Phương Ly. Để chúng tôi biến giấc mơ về không gian sống hoàn hảo thành hiện thực.</p>
+          <a href="https://www.facebook.com/profile.php?id=61574062977384"
+             target="_blank" rel="noopener"
+             class="btn-mega js-magnetic">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <span>Nhắn tin đặt hàng ngay trên Facebook</span>
+            <div class="btn-glow"></div>
+          </a>
+          <div class="cta-trust">
+            <span>✓ Tư vấn miễn phí</span>
+            <span>✓ Báo giá trong 30 phút</span>
+            <span>✓ Bảo hành dài hạn</span>
+            <span>✓ Giao lắp tận nơi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh">
+    <button class="lb-close" id="lb-close" aria-label="Đóng">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Ảnh trước">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <div class="lb-img-wrap">
+      <img id="lb-img" src="" alt="">
+      <p id="lb-caption"></p>
+    </div>
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Ảnh tiếp">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+    <div class="lb-counter" id="lb-counter"></div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-brand">Sofa <em>Phương Ly</em></span>
+          </div>
+          <p>Thương hiệu nội thất cao cấp — chuyên sofa da thật, sofa gỗ tự nhiên và giường divan sang trọng. Sản xuất tại xưởng nội địa, chất lượng đỉnh cao.</p>
+          <a href="https://www.facebook.com/profile.php?id=61574062977384"
+             target="_blank" rel="noopener" class="footer-fb">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Fanpage Facebook
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>Sản phẩm</h4>
+          <ul>
+            <li><a href="#products">Sofa da cao cấp</a></li>
+            <li><a href="#products">Sofa gỗ tự nhiên</a></li>
+            <li><a href="#products">Giường – Divan</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61574062977384" target="_blank" rel="noopener">Đặt theo yêu cầu</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Liên hệ</h4>
+          <ul>
+            <!-- TODO: thay [SĐT] và [Địa chỉ] bằng thông tin thật trong js/config.js -->
+            <li>📞 <a href="tel:0000000000">[SĐT]</a></li>
+            <li>💬 Zalo: <a href="https://zalo.me/0000000000">[SĐT]</a></li>
+            <li>📍 [Địa chỉ showroom]</li>
+            <li>🕐 T2–T7: 8:00 – 20:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 SOFA Phương Ly. Bảo lưu mọi quyền.</p>
+        <p>Thiết kế với tình yêu — để nâng tầm không gian sống Việt</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Lenis smooth scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+
+  <script type="module" src="js/main.js?v=4"></script>
+</body>
+</html>
