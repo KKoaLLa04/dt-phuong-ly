@@ -244,7 +244,7 @@ function buildHeroScene() {
   const h = canvas.clientHeight || window.innerHeight;
 
   // Renderer
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias: !isMobile, alpha: false });
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: !isMobile, alpha: true });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1.5 : 2));
   renderer.setSize(w, h, false);
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -252,11 +252,9 @@ function buildHeroScene() {
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.shadowMap.enabled = !isMobile;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-  renderer.setClearColor(0x15110E);
+  renderer.setClearColor(0x000000, 0);
 
-  // Scene + Fog
   const scene = new THREE.Scene();
-  scene.fog = new THREE.FogExp2(0x15110E, 0.07);
 
   // Camera
   const camera = new THREE.PerspectiveCamera(42, w / h, 0.1, 80);

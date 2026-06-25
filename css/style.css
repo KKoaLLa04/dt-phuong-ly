@@ -130,14 +130,28 @@ body:not(:hover) #cursor-ring { opacity: 0; }
 /* ---------- 5. HEADER ---------- */
 #site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+  background: transparent;
   transition: background 0.4s, backdrop-filter 0.4s, box-shadow 0.4s, padding 0.4s;
 }
+#site-header::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom,
+    rgba(12,9,6,0.55) 0%,
+    rgba(12,9,6,0.15) 100%);
+  transition: background 0.4s;
+  pointer-events: none;
+}
 #site-header.scrolled {
-  background: rgba(21, 17, 14, 0.88);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(12,9,6,0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 rgba(201,163,91,0.15);
 }
+#site-header.scrolled::before {
+  background: none;
+}
+.header-inner { position: relative; z-index: 1; }
 
 .header-inner {
   max-width: var(--container);
@@ -214,6 +228,7 @@ body:not(:hover) #cursor-ring { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 .mobile-nav {
+  position: relative; z-index: 1;
   display: none; flex-direction: column; align-items: center; gap: 0;
   background: rgba(21,17,14,0.97); backdrop-filter: blur(20px);
   padding: 0;
@@ -238,15 +253,20 @@ body:not(:hover) #cursor-ring { opacity: 0; }
 #hero {
   position: relative; width: 100%; height: 100svh; min-height: 600px;
   display: flex; align-items: center; overflow: hidden;
+  background-image: url('../images/background-header-1.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
 }
 #hero-canvas {
   position: absolute; inset: 0; width: 100%; height: 100%;
-  z-index: 0;
+  z-index: 0; opacity: 0.45; mix-blend-mode: screen;
 }
 .hero-gradient {
   position: absolute; inset: 0; z-index: 1;
-  background: radial-gradient(ellipse 70% 60% at 70% 50%, transparent 30%, var(--bg) 100%),
-              linear-gradient(to bottom, transparent 60%, var(--bg) 100%);
+  background:
+    linear-gradient(to right, rgba(12,9,6,0.78) 0%, rgba(12,9,6,0.35) 55%, rgba(12,9,6,0.05) 100%),
+    linear-gradient(to bottom, rgba(12,9,6,0.15) 0%, rgba(12,9,6,0.25) 65%, var(--bg) 100%);
 }
 .hero-content {
   position: relative; z-index: 2;
